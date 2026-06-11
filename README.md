@@ -31,4 +31,4 @@ built with pure HTML & CSS.
 
 
 ## 🔗 Live Demo
-[View Demo](لینک گیتهاب پیجت)
+[View Demo](https://fatemehnazari-dev.github.io/restaurant/)
