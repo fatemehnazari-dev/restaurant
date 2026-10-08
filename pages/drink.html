@@ -25,6 +25,15 @@
           <a href="../index.html#comments" class="nav-item">دیدگاه‌ها</a>
           <a href="../index.html#footer" class="nav-item">تماس</a>
         </nav>
+        <button
+          class="cart-toggle"
+          id="cart-toggle"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="cart-dialog"
+        >
+          سبد خرید <span id="cart-count" aria-live="polite">۰</span>
+        </button>
         <a href="../index.html#reservation" class="button">رزرو میز</a>
       </header>
     </div>
@@ -34,8 +43,8 @@
           <p class="eyebrow">یک همراه خنک برای غذای شما</p>
           <h1 id="drinks-title">نوشیدنی‌های <span>بنفش</span></h1>
           <p>
-            از نوشیدنی‌های کلاسیک تا موهیتوی مخصوص؛ انتخابت را پیدا کن و برای
-            سفارش با ما تماس بگیر.
+            از نوشیدنی‌های کلاسیک تا موهیتوی مخصوص؛ انتخابت را به سبد اضافه کن و
+            فهرست سفارشت را آماده کن.
           </p>
           <a href="#drinks-menu" class="button">دیدن نوشیدنی‌ها</a>
         </div>
@@ -60,7 +69,7 @@
             <span class="drinks-count">۸ انتخاب برای همراهی با غذایتان</span>
           </div>
           <div class="drinks-grid">
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="family-soda">
               <img
                 src="../images/fgcg4q2w.sa3_560x350.jpg"
                 alt="نوشابه خانواده"
@@ -70,16 +79,18 @@
                 <h2>نوشابه خانواده</h2>
                 <div class="price">
                   <p>قیمت<strong>۹۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی نوشابه خانواده"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن نوشابه خانواده به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="canned-soda">
               <img
                 src="../images/ftrkxhyh.b3b_560x350.jpg"
                 alt="نوشابه قوطی"
@@ -89,16 +100,18 @@
                 <h2>نوشابه قوطی</h2>
                 <div class="price">
                   <p>قیمت<strong>۵۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی نوشابه قوطی"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن نوشابه قوطی به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="sprite">
               <img
                 src="../images/t4kyyoi4.mio_560x350.jpg"
                 alt="نوشابه اسپرایت"
@@ -108,16 +121,18 @@
                 <h2>نوشابه اسپرایت</h2>
                 <div class="price">
                   <p>قیمت<strong>۸۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی نوشابه اسپرایت"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن نوشابه اسپرایت به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="cola-family">
               <img
                 src="../images/jo2mqmkp.lbu_560x350.jpg"
                 alt="نوشابه مشکی خانواده"
@@ -127,16 +142,18 @@
                 <h2>نوشابه مشکی خانواده</h2>
                 <div class="price">
                   <p>قیمت<strong>۸۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی نوشابه مشکی خانواده"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن نوشابه مشکی خانواده به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="lemon-malt">
               <img
                 src="../images/hxyxtzcw.pcz_560x350.jpg"
                 alt="دلستر قوطی لیمویی"
@@ -146,16 +163,18 @@
                 <h2>دلستر قوطی لیمویی</h2>
                 <div class="price">
                   <p>قیمت<strong>۴۵,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی دلستر لیمویی"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن دلستر لیمویی به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="doogh-family">
               <img
                 src="../images/jhgkngf1.iow_560x350.jpg"
                 alt="دوغ خانواده"
@@ -165,16 +184,18 @@
                 <h2>دوغ خانواده</h2>
                 <div class="price">
                   <p>قیمت<strong>۸۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی دوغ خانواده"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن دوغ خانواده به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="special-mojito">
               <img
                 src="../images/mohito.jpg"
                 alt="موهیتوی مخصوص"
@@ -184,27 +205,31 @@
                 <h2>موهیتوی مخصوص</h2>
                 <div class="price">
                   <p>قیمت<strong>۹۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی موهیتوی مخصوص"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن موهیتوی مخصوص به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
-            <article class="drinks-items">
+            <article class="drinks-items" data-product-id="mineral-water">
               <img src="../images/water.jpg" alt="آب معدنی" loading="lazy" />
               <div class="drink-details">
                 <h2>آب معدنی</h2>
                 <div class="price">
                   <p>قیمت<strong>۲۰,۰۰۰ تومان</strong></p>
-                  <a
+                  <button
                     class="button button-orange"
-                    href="tel:09121234567"
-                    aria-label="سفارش تلفنی آب معدنی"
-                    >سفارش تلفنی</a
+                    type="button"
+                    data-add-to-cart
+                    aria-label="افزودن آب معدنی به سبد خرید"
                   >
+                    افزودن به سبد
+                  </button>
                 </div>
               </div>
             </article>
@@ -212,10 +237,56 @@
         </div>
       </section>
     </main>
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-header">
+        <div>
+          <p class="section-kicker">انتخاب‌های شما</p>
+          <h2 id="cart-title">سبد خرید</h2>
+        </div>
+        <button
+          class="cart-close"
+          id="close-cart"
+          type="button"
+          aria-label="بستن سبد خرید"
+        >
+          ×
+        </button>
+      </div>
+      <p class="cart-empty" id="cart-empty">سبد خرید خالی است.</p>
+      <ul class="cart-items" id="cart-items"></ul>
+      <div class="cart-total" id="cart-total" hidden>
+        <span>جمع کل</span>
+        <strong id="cart-total-price"></strong>
+      </div>
+      <div class="cart-actions">
+        <button
+          class="button button-outline-dark"
+          id="clear-cart"
+          type="button"
+          hidden
+        >
+          خالی‌کردن سبد
+        </button>
+        <a class="button button-orange" id="checkout-link" href="#" hidden
+          >آماده‌سازی سفارش ایمیلی</a
+        >
+      </div>
+      <p class="cart-note">
+        با ادامه، متن سفارش در برنامه‌ی ایمیل شما آماده می‌شود؛ پرداخت آنلاین در
+        این نسخه فعال نیست.
+      </p>
+      <p
+        class="visually-hidden"
+        id="cart-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </dialog>
     <footer class="drinks-footer">
       برای هماهنگی سفارش با
       <a href="tel:09121234567" dir="ltr">09121234567</a> تماس بگیرید ·
       <a href="../index.html">بازگشت به صفحه‌ی اصلی</a>
     </footer>
+    <script src="../scripts/site.js" defer></script>
   </body>
 </html>

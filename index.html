@@ -313,6 +313,7 @@
                 autocomplete="tel"
                 inputmode="tel"
                 placeholder="شماره‌ی همراه"
+                aria-describedby="reservation-status"
                 required
               />
             </label>
@@ -348,7 +349,17 @@
             <button type="submit" class="button button-orange">
               آماده‌سازی درخواست
             </button>
-            <small>رزرو آنلاین مستقیم در این نسخه فعال نیست.</small>
+            <small id="reservation-status" role="status" aria-live="polite">
+              رزرو آنلاین مستقیم در این نسخه فعال نیست.
+            </small>
+            <a
+              class="button button-orange"
+              id="reservation-email-link"
+              href="#"
+              hidden
+            >
+              بازکردن برنامه‌ی ایمیل
+            </a>
           </div>
         </form>
       </div>
@@ -356,5 +367,6 @@
     <a href="#header" class="back-to-top" aria-label="بازگشت به بالای صفحه"
       >↑</a
     >
+    <script src="./scripts/site.js" defer></script>
   </body>
 </html>
