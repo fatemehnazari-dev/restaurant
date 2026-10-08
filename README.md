@@ -93,14 +93,4 @@ The website is also published with GitHub Pages at the live demo link above.
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=222222)
 ![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222222?style=flat&logo=github&logoColor=white)
 
-## Screenshots
 
-<img width="1328" height="637" alt="Banafsh restaurant website screenshot" src="https://github.com/user-attachments/assets/533ec493-1931-4aa5-bb00-07133447c0d2" />
-
-<img width="1331" height="625" alt="Banafsh restaurant website screenshot" src="https://github.com/user-attachments/assets/9aa46034-5539-45c3-94e2-a561e88bb0a8" />
-
-<img width="1341" height="640" alt="Banafsh restaurant website screenshot" src="https://github.com/user-attachments/assets/6460f171-3c48-4da6-8b32-fc7c2005bcf8" />
-
-## License
-
-No license is currently specified. Contact the repository owner before reusing the project or its assets.
