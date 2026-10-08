@@ -1,133 +1,221 @@
 <!doctype html>
-<html lang="IR-fa" dir="rtl">
+<html lang="fa-IR" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>نوشیدنی ها</title>
+    <meta
+      name="description"
+      content="منوی نوشیدنی‌های رستوران بنفش؛ از نوشابه و دوغ تا موهیتوی مخصوص."
+    />
+    <meta name="theme-color" content="#19052f" />
+    <title>منوی نوشیدنی‌ها | رستوران بنفش</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="icon" href="../images/fav.png" type="image/png" />
   </head>
-  <body>
-    <header class="header" id="header">
-      <nav class="navbar">
-        <a href="../index.html" class="nav-item">خانه</a>
-        <a href="#menu" class="nav-item">منو</a>
-        <a href="#about-us" class="nav-item">درباره ما</a>
-        <a href="#comments" class="nav-item">نظرات</a>
-        <a href="#footer" class="nav-item">تماس با ما</a>
-      </nav>
-      <img src="../images/banafsh-logo.png" alt="logo" class="logo" />
-      <a href="" class="button button-yellow">رزرو میز انلاین</a>
-    </header>
+  <body class="drinks-page">
+    <div class="drinks-top" id="header">
+      <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="رستوران بنفش، خانه">
+          <img src="../images/banafsh-logo.png" alt="رستوران بنفش" />
+        </a>
+        <nav class="navbar" aria-label="ناوبری اصلی">
+          <a href="../index.html" class="nav-item">خانه</a>
+          <a href="../index.html#menu" class="nav-item">منو</a>
+          <a href="../index.html#about-us" class="nav-item">درباره ما</a>
+          <a href="../index.html#comments" class="nav-item">دیدگاه‌ها</a>
+          <a href="../index.html#footer" class="nav-item">تماس</a>
+        </nav>
+        <a href="../index.html#reservation" class="button">رزرو میز</a>
+      </header>
+    </div>
     <main>
-      <div id="drinks-title">
-        <h3>نوشیدنی های رستوران بنفش</h3>
-      </div>
-      <section id="drinks-containers">
-        <div class="drinks-items">
-          <img src="../images/fgcg4q2w.sa3_560x350.jpg" alt="" />
-          <h3>نوشابه خانواده</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>90,000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
-          </div>
+      <section class="drinks-hero" aria-labelledby="drinks-title">
+        <div>
+          <p class="eyebrow">یک همراه خنک برای غذای شما</p>
+          <h1 id="drinks-title">نوشیدنی‌های <span>بنفش</span></h1>
+          <p>
+            از نوشیدنی‌های کلاسیک تا موهیتوی مخصوص؛ انتخابت را پیدا کن و برای
+            سفارش با ما تماس بگیر.
+          </p>
+          <a href="#drinks-menu" class="button">دیدن نوشیدنی‌ها</a>
         </div>
-        <div class="drinks-items">
-          <img src="../images/ftrkxhyh.b3b_560x350.jpg" alt="" />
-          <h3>نوشابه قوطی</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>50,000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
+        <img
+          class="drinks-hero-img"
+          src="../images/mohito.jpg"
+          alt="نوشیدنی خنک با برش پرتقال"
+        />
+      </section>
+
+      <section
+        class="section drinks-section"
+        id="drinks-menu"
+        aria-labelledby="drinks-menu-title"
+      >
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">سرد و دلچسب</p>
+              <h2 id="drinks-menu-title">منوی نوشیدنی‌ها</h2>
+            </div>
+            <span class="drinks-count">۸ انتخاب برای همراهی با غذایتان</span>
           </div>
-        </div>
-        <div class="drinks-items">
-          <img src="../images/t4kyyoi4.mio_560x350.jpg" alt="" />
-          <h3>نوشابه اسپرایت</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>80,000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
-          </div>
-        </div>
-        <div class="drinks-items">
-          <img src="../images/jo2mqmkp.lbu_560x350.jpg" alt="" />
-          <h3>نوشابه مشکی کوکا(خانواده)</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>80,000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
-          </div>
-        </div>
-        <div class="drinks-items">
-          <img src="../images/hxyxtzcw.pcz_560x350.jpg" alt="" />
-          <h3>دلستر قوطی لیمویی</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>45000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
-          </div>
-        </div>
-        <div class="drinks-items">
-          <img src="../images/jhgkngf1.iow_560x350.jpg" alt="" />
-          <h3>دوغ خانواده</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>80,000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
-          </div>
-        </div>
-        <div class="drinks-items">
-          <img src="../images/mohito.jpg" alt="" />
-          <h3>موهیتو مخصوص</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>90,000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
-          </div>
-        </div>
-        <div class="drinks-items">
-          <img src="../images/water.jpg" alt="" />
-          <h3>اب معدنی</h3>
-          <div class="price">
-            <p>
-              قیمت
-              <span>20000</span>
-            </p>
-            <a href="">
-              <button>افزودن به سبد خرید</button>
-            </a>
+          <div class="drinks-grid">
+            <article class="drinks-items">
+              <img
+                src="../images/fgcg4q2w.sa3_560x350.jpg"
+                alt="نوشابه خانواده"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>نوشابه خانواده</h2>
+                <div class="price">
+                  <p>قیمت<strong>۹۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی نوشابه خانواده"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img
+                src="../images/ftrkxhyh.b3b_560x350.jpg"
+                alt="نوشابه قوطی"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>نوشابه قوطی</h2>
+                <div class="price">
+                  <p>قیمت<strong>۵۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی نوشابه قوطی"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img
+                src="../images/t4kyyoi4.mio_560x350.jpg"
+                alt="نوشابه اسپرایت"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>نوشابه اسپرایت</h2>
+                <div class="price">
+                  <p>قیمت<strong>۸۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی نوشابه اسپرایت"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img
+                src="../images/jo2mqmkp.lbu_560x350.jpg"
+                alt="نوشابه مشکی خانواده"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>نوشابه مشکی خانواده</h2>
+                <div class="price">
+                  <p>قیمت<strong>۸۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی نوشابه مشکی خانواده"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img
+                src="../images/hxyxtzcw.pcz_560x350.jpg"
+                alt="دلستر قوطی لیمویی"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>دلستر قوطی لیمویی</h2>
+                <div class="price">
+                  <p>قیمت<strong>۴۵,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی دلستر لیمویی"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img
+                src="../images/jhgkngf1.iow_560x350.jpg"
+                alt="دوغ خانواده"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>دوغ خانواده</h2>
+                <div class="price">
+                  <p>قیمت<strong>۸۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی دوغ خانواده"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img
+                src="../images/mohito.jpg"
+                alt="موهیتوی مخصوص"
+                loading="lazy"
+              />
+              <div class="drink-details">
+                <h2>موهیتوی مخصوص</h2>
+                <div class="price">
+                  <p>قیمت<strong>۹۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی موهیتوی مخصوص"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="drinks-items">
+              <img src="../images/water.jpg" alt="آب معدنی" loading="lazy" />
+              <div class="drink-details">
+                <h2>آب معدنی</h2>
+                <div class="price">
+                  <p>قیمت<strong>۲۰,۰۰۰ تومان</strong></p>
+                  <a
+                    class="button button-orange"
+                    href="tel:09121234567"
+                    aria-label="سفارش تلفنی آب معدنی"
+                    >سفارش تلفنی</a
+                  >
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
     </main>
+    <footer class="drinks-footer">
+      برای هماهنگی سفارش با
+      <a href="tel:09121234567" dir="ltr">09121234567</a> تماس بگیرید ·
+      <a href="../index.html">بازگشت به صفحه‌ی اصلی</a>
+    </footer>
   </body>
 </html>

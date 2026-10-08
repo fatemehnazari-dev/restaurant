@@ -1,234 +1,360 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa-IR" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>رستوران بنفش</title>
+    <meta
+      name="description"
+      content="رستوران بنفش؛ تجربه‌ای متفاوت از طعم‌های دوست‌داشتنی، نوشیدنی‌های تازه و فضایی صمیمی."
+    />
+    <meta name="theme-color" content="#19052f" />
+    <title>رستوران بنفش | طعمی برای لحظه‌های خوب</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+    <link rel="icon" href="./images/fav.png" type="image/png" />
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="navbar">
-        <a href="./index.html" class="nav-item">خانه</a>
-        <a href="#menu" class="nav-item">منو</a>
-        <a href="#about-us" class="nav-item">درباره ما</a>
-        <a href="#comments" class="nav-item">نظرات</a>
-        <a href="#footer" class="nav-item">تماس با ما</a>
-      </nav>
-      <img src="./images/banafsh-logo.png" alt="logo" class="logo" />
-      <a href="" class="button button-yellow">رزرو میز انلاین</a>
+    <header class="hero" id="header">
+      <div class="site-header">
+        <a class="brand" href="./index.html" aria-label="رستوران بنفش، خانه">
+          <img src="./images/banafsh-logo.png" alt="رستوران بنفش" />
+        </a>
+        <nav class="navbar" aria-label="ناوبری اصلی">
+          <a href="#menu" class="nav-item">منو</a>
+          <a href="#about-us" class="nav-item">درباره ما</a>
+          <a href="#comments" class="nav-item">دیدگاه‌ها</a>
+          <a href="#footer" class="nav-item">تماس</a>
+        </nav>
+        <a href="#reservation" class="button">رزرو میز</a>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">به دنیای خوش‌طعم بنفش خوش آمدید</p>
+        <h1>طعم متفاوت،<br />حال‌وهوای <span>بنفش</span></h1>
+        <p class="hero-copy">
+          از یک برگر آبدار تا نوشیدنی خنک؛ انتخابی خوش‌طعم برای دورهمی‌های
+          دوستانه و لحظه‌های به‌یادماندنی.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="button">دیدن منو</a>
+          <a href="#reservation" class="button button-outline">رزرو میز</a>
+        </div>
+        <div class="hero-note">
+          <span class="hero-note-mark" aria-hidden="true"></span>
+          <span><strong>یک انتخاب خوش‌طعم</strong> برای دورهمی‌های شما</span>
+        </div>
+      </div>
     </header>
+
     <main>
-      <section class="menu" id="menu">
-        <h1>
-          رستوران
-          <span class="purple">بنفش</span>
-        </h1>
-        <a href="" class="button button-purple">مشاهده منو کامل</a>
-        <div class="menu-items">
-          <figure class="menu-item">
-            <img src="images/burger.png" alt="نوشیدنی" class="menu-item-img" />
-            <figcaption class="menu-item-text">
-              <h2>نوشیدنی</h2>
-              <p>متن ساختگی</p>
-            </figcaption>
-          </figure>
-          <figure class="menu-item">
-            <img src="./images/pizza.png" alt="پیتزا" class="menu-item-img" />
-            <figcaption class="menu-item-text">
-              <h2>پیتزا</h2>
-              <p>متن ساختگی</p>
-            </figcaption>
-          </figure>
-          <figure class="menu-item">
-            <img
-              src="./images/barbecue.png"
-              alt="سوخاری"
-              class="menu-item-img"
-            />
-            <figcaption class="menu-item-text">
-              <h2>سوخاری</h2>
-              <p>متن ساختگی</p>
-            </figcaption>
-          </figure>
-          <a href="./pages/drink.html">
+      <section class="section menu-section" id="menu">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">انتخاب‌های محبوب</p>
+              <h2>منوی رستوران</h2>
+            </div>
+            <a class="text-link" href="./pages/drink.html">
+              منوی نوشیدنی‌ها <span aria-hidden="true">←</span>
+            </a>
+          </div>
+          <div class="menu-items">
             <figure class="menu-item">
-              <img src="./images/drink.png" alt="برگر" class="menu-item-img" />
+              <img
+                src="./images/burger.png"
+                alt="برگر با سیب‌زمینی سرخ‌شده"
+                class="menu-item-img"
+              />
               <figcaption class="menu-item-text">
-                <h2>نوشیدنی</h2>
-                <p>برای مشاهده منوی نوشیدنی ها کلیک کنید</p>
+                <h3>برگر</h3>
+                <p>برگرهای خوش‌طعم و تازه</p>
               </figcaption>
             </figure>
-          </a>
-        </div>
-      </section>
-      <section class="comments" id="comments">
-        <h2>
-          نظرات مشتریان
-          <span class="purple">بنفش</span>
-        </h2>
-        <div class="comment-items">
-          <figure class="comment-item">
-            <img
-              src="./images/peyman.png"
-              class="comment-item-img"
-              alt="پیمان"
-            />
-            <figcaption class="comment-item-text">
-              <h3>پیمان مرادی</h3>
-              <p>
-                غذاها فوق‌العاده بودن! مخصوصاً پاستای ترفل بنفش 😍 محیطش هم خیلی
-                آروم و شیکه، موزیک لایو داشتن و پرسنل خیلی مودب بودن. قطعاً
-                دوباره میام.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="comment-item">
-            <img
-              src="./images/melika.png"
-              class="comment-item-img"
-              alt="ملیکا"
-            />
-            <figcaption class="comment-item-text">
-              <h3>ملیکا احمدی</h3>
-              <p>
-                طعم غذاها خوب بود و دکور بنفش رستوران واقعاً خاصه. فقط کمی
-                سرویس‌دهی طول کشید، ولی در کل تجربه خوبی بود.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="comment-item">
-            <img
-              src="./images/mohsen.png"
-              class="comment-item-img"
-              alt="محسن"
-            />
-            <figcaption class="comment-item-text">
-              <h3>محسن نواب</h3>
-              <p>
-                من و دوستم برای سالگردمون رفتیم، میز ما با گل بنفش تزیین شده بود
-                😍 خیلی حس خاصی داشت. پیش‌غذاهاشونم عالیه، مخصوصاً سوپ قارچش.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="comment-item">
-            <img src="./images/hamid.png" class="comment-item-img" alt="حمید" />
-            <figcaption class="comment-item-text">
-              <h3>حمید شاملو</h3>
-              <p>
-                رستوران بنفش جزو معدود جاهایی‌ه که هم غذاهاش خوشمزه‌س هم طراحی
-                داخلیش چشم‌نوازه 💜 پرسنل خیلی خوش‌برخورد بودن، پیشنهاد می‌کنم
-                حتماً استیک مخصوصشونو امتحان کنین.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="comment-item">
-            <img src="./images/omid.png" class="comment-item-img" alt="امید " />
-            <figcaption class="comment-item-text">
-              <h3>امید نصرتی</h3>
-              <p>
-                محیط قشنگ بود ولی تهویه ضعیف داشت، بوی غذا زیاد بود. سفارش ما هم
-                دیر رسید. به نظرم اگه مدیریت به جزئیات بیشتر توجه کنه می‌تونه
-                خیلی بهتر بشه.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="comment-item">
-            <img src="./images/roya.png" class="comment-item-img" alt="رویا" />
-            <figcaption class="comment-item-text">
-              <h3>رویا ناصحی</h3>
-              <p>
-                فضا قشنگه ولی نسبت به قیمت، حجم غذاها کم بود. برای یه‌بار امتحان
-                بد نیست ولی انتظارم بالاتر بود.
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="about-us" id="about-us">
-        <div class="about-us-text">
-          <h2>
-            درباره رستوران
-            <span class="yellow">بنفش</span>
-          </h2>
-          <p>
-            رستوران بنفش در سال 2015 با هدف ارائه بهترین غذاها و خدمات در فضایی
-            دلنشین و مدرن تأسیس شد. ما با بهره‌گیری از سرآشپزهای با تجربه و
-            استفاده از تازه‌ترین مواد اولیه، غذاهایی با طعم بی‌نظیر برای شما
-            آماده می‌کنیم. منوی متنوع ما شامل انواع پیتزا، برگر، غذاهای سوخاری و
-            نوشیدنی‌های خاص است. فضای گرم و دوستانه رستوران ما، محیطی ایده‌آل
-            برای دورهمی‌های خانوادگی، جشن‌های خاص و قرارهای دوستانه فراهم
-            می‌کند. رضایت شما، هدف اصلی ماست. منتظر دیدار شما هستیم تا با ما
-            لحظات خوشی را تجربه کنید.
-          </p>
-        </div>
-        <img
-          src="./images/banafsh.png"
-          alt="رستوران بنفش"
-          class="about-us-img"
-        />
-      </section>
-    </main>
-    <footer class="footer" id="footer">
-      <section class="contact-us">
-        <h2>اطلاعات تماس</h2>
-        <div class="contact-us-item">
-          <h3 class="contact-us-title">
-            <img src="./images/location.svg" alt="ادرس" />
-            آدرس
-          </h3>
-          <address>cmskdc mdz</address>
-        </div>
-        <div class="contact-us-item">
-          <h3 class="contact-us-title">
-            <img src="./images/mail.svg" alt="ایمیل" />
-            ایمیل
-          </h3>
-          <a href="hello@gmail.com">hello@gmail.com</a>
-        </div>
-        <div class="contact-us-item">
-          <h3 class="contact-us-title">
-            <img src="./images/phone.svg" alt="شماره تماس" />
-            شماره تماس
-          </h3>
-          <a href="tel:09121234567">09121234567</a>
+            <figure class="menu-item">
+              <img
+                src="./images/pizza.png"
+                alt="پیتزای تازه"
+                class="menu-item-img"
+              />
+              <figcaption class="menu-item-text">
+                <h3>پیتزا</h3>
+                <p>ترکیب محبوب پنیر و مواد تازه</p>
+              </figcaption>
+            </figure>
+            <figure class="menu-item">
+              <img
+                src="./images/barbecue.png"
+                alt="غذای سوخاری"
+                class="menu-item-img"
+              />
+              <figcaption class="menu-item-text">
+                <h3>سوخاری</h3>
+                <p>ترد، داغ و آماده‌ی لذت بردن</p>
+              </figcaption>
+            </figure>
+            <a
+              class="menu-item-link"
+              href="./pages/drink.html"
+              aria-label="مشاهده منوی نوشیدنی‌ها"
+            >
+              <figure class="menu-item">
+                <img
+                  src="./images/drink.png"
+                  alt="نوشیدنی خنک نارنجی"
+                  class="menu-item-img"
+                />
+                <figcaption class="menu-item-text">
+                  <h3>نوشیدنی</h3>
+                  <p>خنکای دلچسب برای کنار غذایتان</p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
       </section>
 
-      <form action="" class="form">
-        <h2>رزرو میز انلاین</h2>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="نام و نام خانوادگی"
-          class="input"
-        />
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder="  شماره تماس"
-          class="input"
-          dir="rtl"
-        />
-        <select name="" id="" class="input">
-          <option value="">تعداد نفرات</option>
-          <option value="1">یک</option>
-          <option value="2">دو</option>
-        </select>
-        <select name="" id="" class="input">
-          <option value="">ساعت</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-        </select>
-        <input type="submit" value="ثبت درخواست" class="form-button" />
-      </form>
+      <section class="section comments-section" id="comments">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">از زبان همراهان ما</p>
+              <h2>تجربه‌ی مهمان‌ها</h2>
+            </div>
+            <p class="section-description">
+              هر دیدگاه به ما کمک می‌کند تجربه‌ی بهتری بسازیم.
+            </p>
+          </div>
+          <div class="comment-items">
+            <figure class="comment-item">
+              <img
+                src="./images/peyman.png"
+                class="comment-item-img"
+                alt="پیمان مرادی"
+              />
+              <figcaption class="comment-item-text">
+                <h3>پیمان مرادی</h3>
+                <p>
+                  غذاها فوق‌العاده بودن! محیطش هم خیلی آروم و شیکه و پرسنل خیلی
+                  مودب بودن. قطعاً دوباره میام.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="comment-item">
+              <img
+                src="./images/melika.png"
+                class="comment-item-img"
+                alt="ملیکا احمدی"
+              />
+              <figcaption class="comment-item-text">
+                <h3>ملیکا احمدی</h3>
+                <p>
+                  طعم غذاها خوب بود و دکور بنفش رستوران واقعاً خاصه. در کل
+                  تجربه‌ی خوبی بود.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="comment-item">
+              <img
+                src="./images/mohsen.png"
+                class="comment-item-img"
+                alt="محسن نواب"
+              />
+              <figcaption class="comment-item-text">
+                <h3>محسن نواب</h3>
+                <p>
+                  برای سالگردمون میز با گل بنفش تزیین شده بود و حس خاصی داشت.
+                  پیش‌غذاهاشون هم عالیه.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="comment-item">
+              <img
+                src="./images/hamid.png"
+                class="comment-item-img"
+                alt="حمید شاملو"
+              />
+              <figcaption class="comment-item-text">
+                <h3>حمید شاملو</h3>
+                <p>
+                  غذاها خوشمزه‌ان و طراحی داخلی چشم‌نوازه. پرسنل خیلی خوش‌برخورد
+                  بودن.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="comment-item">
+              <img
+                src="./images/omid.png"
+                class="comment-item-img"
+                alt="امید نصرتی"
+              />
+              <figcaption class="comment-item-text">
+                <h3>امید نصرتی</h3>
+                <p>
+                  محیط قشنگ بود، اما سفارش ما کمی دیر رسید. امیدوارم سرویس‌دهی
+                  بهتر بشه.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="comment-item">
+              <img
+                src="./images/roya.png"
+                class="comment-item-img"
+                alt="رویا ناصحی"
+              />
+              <figcaption class="comment-item-text">
+                <h3>رویا ناصحی</h3>
+                <p>
+                  فضا قشنگه و برای یک‌بار امتحان کردن انتخاب خوبیه؛ انتظارم از
+                  حجم غذا کمی بیشتر بود.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about-us">
+        <div class="section-inner about-us">
+          <div class="about-copy">
+            <p class="section-kicker">قصه‌ی ما</p>
+            <h2>درباره‌ی رستوران <span>بنفش</span></h2>
+            <p>
+              رستوران بنفش با هدف آماده‌کردن غذاهای خوش‌طعم در فضایی دلنشین شکل
+              گرفت. منوی متنوع ما از برگر و پیتزا تا غذاهای سوخاری و نوشیدنی‌های
+              خاص را در بر می‌گیرد؛ فضایی برای دورهمی‌های خانوادگی و قرارهای
+              دوستانه. خوشحال می‌شویم میزبان لحظه‌های خوب شما باشیم.
+            </p>
+            <a href="#reservation" class="button"
+              >برای دیدار برنامه‌ریزی کنید</a
+            >
+            <div class="about-stats">
+              <div class="about-stat">
+                <strong>تازه</strong><span>آماده‌سازی روزانه</span>
+              </div>
+              <div class="about-stat">
+                <strong>متنوع</strong><span>انتخاب برای هر سلیقه</span>
+              </div>
+              <div class="about-stat">
+                <strong>صمیمی</strong><span>فضایی برای دورهمی</span>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images/banafsh.png"
+            alt="فضای داخلی رستوران بنفش"
+            class="about-us-img"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-inner">
+        <section class="contact-us" aria-labelledby="contact-title">
+          <p class="section-kicker">کنار شما هستیم</p>
+          <h2 id="contact-title">اطلاعات تماس</h2>
+          <p class="contact-intro">
+            برای دریافت نشانی و هماهنگی با ما در تماس باشید.
+          </p>
+          <div class="contact-list">
+            <div class="contact-us-item">
+              <span class="contact-icon" aria-hidden="true">آ</span>
+              <div>
+                <h3>نشانی</h3>
+                <p>برای دریافت نشانی با ما تماس بگیرید.</p>
+              </div>
+            </div>
+            <div class="contact-us-item">
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <div>
+                <h3>ایمیل</h3>
+                <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-us-item">
+              <span class="contact-icon" aria-hidden="true">☎</span>
+              <div>
+                <h3>شماره تماس</h3>
+                <a href="tel:09121234567" dir="ltr">09121234567</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <form
+          class="reservation"
+          id="reservation"
+          action="mailto:hello@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <p class="section-kicker">میزتان را انتخاب کنید</p>
+          <h2>درخواست رزرو</h2>
+          <p class="reservation-intro">
+            اطلاعات را وارد کنید تا درخواست در برنامه‌ی ایمیل شما آماده‌ی ارسال
+            شود.
+          </p>
+          <div class="form-grid">
+            <label class="input-wrap"
+              >نام و نام خانوادگی
+              <input
+                class="input"
+                type="text"
+                name="نام"
+                autocomplete="name"
+                placeholder="نام شما"
+                required
+              />
+            </label>
+            <label class="input-wrap"
+              >شماره تماس
+              <input
+                class="input"
+                type="tel"
+                name="شماره تماس"
+                autocomplete="tel"
+                inputmode="tel"
+                placeholder="شماره‌ی همراه"
+                required
+              />
+            </label>
+            <label class="input-wrap"
+              >تاریخ رزرو
+              <input class="input" type="date" name="تاریخ رزرو" required />
+            </label>
+            <label class="input-wrap"
+              >ساعت حضور
+              <select class="input" name="ساعت" required>
+                <option value="" selected disabled>انتخاب ساعت</option>
+                <option value="13:00">۱۳:۰۰</option>
+                <option value="14:00">۱۴:۰۰</option>
+                <option value="18:00">۱۸:۰۰</option>
+                <option value="19:00">۱۹:۰۰</option>
+                <option value="20:00">۲۰:۰۰</option>
+                <option value="21:00">۲۱:۰۰</option>
+              </select>
+            </label>
+            <label class="input-wrap"
+              >تعداد نفرات
+              <select class="input" name="تعداد نفرات" required>
+                <option value="" selected disabled>انتخاب تعداد</option>
+                <option value="1">یک نفر</option>
+                <option value="2">دو نفر</option>
+                <option value="3">سه نفر</option>
+                <option value="4">چهار نفر</option>
+                <option value="5+">پنج نفر یا بیشتر</option>
+              </select>
+            </label>
+          </div>
+          <div class="reservation-actions">
+            <button type="submit" class="button button-orange">
+              آماده‌سازی درخواست
+            </button>
+            <small>رزرو آنلاین مستقیم در این نسخه فعال نیست.</small>
+          </div>
+        </form>
+      </div>
     </footer>
-    <a href="#header" class="float">
-      <img src="./images/arrow.svg" alt="arrow" />
-    </a>
+    <a href="#header" class="back-to-top" aria-label="بازگشت به بالای صفحه"
+      >↑</a
+    >
   </body>
 </html>
